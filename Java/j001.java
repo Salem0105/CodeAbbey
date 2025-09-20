@@ -1,4 +1,3 @@
-package Java;
 import java.util.*;
 
 //https://www.codeabbey.com/index/task_view/sum-of-two

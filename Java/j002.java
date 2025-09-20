@@ -1,5 +1,4 @@
-package Java;
-import java.util.*;;
+import java.util.Scanner;
 
 //https://www.codeabbey.com/index/task_view/sum-in-loop
 
