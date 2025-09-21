@@ -1,8 +1,9 @@
-import java.util.*;
-
 //https://www.codeabbey.com/index/task_view/sum-of-two
 
+import java.util.*;
+
 public class j001 {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();

@@ -1,8 +1,8 @@
-//https://www.codeabbey.com/index/task_view/sums-in-loop
+//https://www.codeabbey.com/index/task_view/min-of-two
 
 import java.util.Scanner;
 
-public class j003 {
+public class j004 {
 
     static Scanner scan = new Scanner(System.in);
 
@@ -18,9 +18,14 @@ public class j003 {
         for (int i = 0; i < Integer.parseInt(total); i++) {
             String data = scan.nextLine();//se trabaja linea a linea
             String[] cadena = data.split(" ");//separar
-            //convertir y sumar
-            int sub_suma = Integer.parseInt(cadena[0]) + Integer.parseInt(cadena[1]);
-            mostrar += sub_suma + " ";//agragar
+            String valor = "";//inicializar
+            //comparar y buscar el menor
+            if (Integer.parseInt(cadena[0]) < Integer.parseInt(cadena[1])) {
+                valor = cadena[0];
+            } else {
+                valor = cadena[1];
+            }
+            mostrar += valor + " ";//agragar
         }
         return mostrar;
     }

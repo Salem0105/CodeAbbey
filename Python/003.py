@@ -1,13 +1,13 @@
 #https://www.codeabbey.com/index/task_view/sums-in-loop
 
-r = int(input())
+receive = int(input())
 chain = ""
 
-for i in range(r):
-    vs = input() 
-    svs = vs.split(" ")
-    sumvs = int(svs[0]) + int(svs[1])
-    chain += f"{sumvs} "
+for i in range(receive):
+    data = input() 
+    separate = data.split(" ")
+    add_data = int(separate[0]) + int(separate[1])
+    chain += f"{add_data} "
     
 print(chain)
     

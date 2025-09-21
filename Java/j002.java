@@ -1,9 +1,10 @@
-import java.util.Scanner;
-
 //https://www.codeabbey.com/index/task_view/sum-in-loop
 
+import java.util.Scanner;
+
 public class j002 {
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //recibir los datos
         String index = scan.nextLine();
@@ -15,7 +16,7 @@ public class j002 {
         //Ingresar cada dato separado por un espacio dentro del vector
         String[] vector = numbers.split(" ");
         int sum = 0;
-        
+
         for (String a_z : vector) {
             //sumar cada valor, pero primero se convierte en entero
             sum += Integer.parseInt(a_z);
