@@ -1,9 +1,8 @@
 
-//https://www.codeabbey.com/index/task_view/rounding
-
+//https://www.codeabbey.com/index/task_view/fahrenheit-celsius
 import java.util.Scanner;
 
-public class j006 {
+public class j007 {
 
     static Scanner scan = new Scanner(System.in);
 
@@ -14,15 +13,12 @@ public class j006 {
         System.out.println(iteration(index));
     }
 
-    public static String iteration(String total) {
+    public static String iteration(String cadena) {
         String mostrar = ""; // un string vacio para ir agregando los resultados
-        for (int i = 0; i < Integer.parseInt(total); i++) {
-            String data = scan.nextLine();// se trabaja linea a linea
-            String[] cadena = data.split(" ");// separar
-            // reducir o simplificar variables para usar
-            double a = Double.parseDouble(cadena[0]);
-            double b = Double.parseDouble(cadena[1]);
-            mostrar += round_far_zero(a / b) + " ";// agregar
+        String[] index = cadena.split(" ");// separar
+        for (int i = 0; i < Integer.parseInt(index[0]); i++) {
+            double celsius = (Integer.parseInt(index[i + 1]) - 32) * (5.0 / 9.0);// convertir a celsius
+            mostrar += round_far_zero(celsius) + " ";// agregar
         }
         return mostrar;
     }

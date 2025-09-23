@@ -20,22 +20,18 @@ def round_zero(data):
             return int(data)
 
 
-def itaration(total):
-    # Cadena para almacenar los resultados
-    chain = ""
+def itaration(total):  
+    chain = "" # Cadena para almacenar los resultados
     for i in range(total):
-        # Recibir datos
-        data = input()
-        # Separar los datos
-        separate = data.split(" ")
+        data = input()  # Recibir datos
+        separate = data.split(" ")  #Separar los datos
         data = int(separate[0]) / int(separate[1])
-        # Llamar a la funcion y agregar el resultado a una variable reuilizable
+        # Llamar a la funcion y agregar el resultado a una variable reutilizable
         chain += f"{round_zero(data)} "
     # Imprimir resultados
     print(chain)
 
 
-# recibir primer dato
+# recibir primer dato y Llamar a la funcion principal
 receive = int(input())
-# Llamar a la funcion
 itaration(receive)
