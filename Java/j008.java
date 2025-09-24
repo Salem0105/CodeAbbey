@@ -1,3 +1,5 @@
+
+//https://www.codeabbey.com/index/task_view/arithmetic-progression
 import java.util.Scanner;
 
 public class j008 {
