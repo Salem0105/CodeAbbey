@@ -1,12 +1,18 @@
 # https://www.codeabbey.com/index/task_view/sum-of-digits
 
-
+"""
+Necesitamos encontrar la suma de los dígitos de un número.
+El número se obtiene multiplicando dos números y sumando un tercer número al resultado.
+Pero no sé que tan grande puede ser el número.
+Solo sé que debo dividir el número por 10 hasta que el cociente sea 0.
+"""
 def sum_digits(n):
     div_n = n // 10
     mod_n = n % 10
     if div_n == 0:
         return mod_n
     else:
+        #se vuelve a llamar a la funcion, pero con el cociente
         return mod_n + sum_digits(div_n)
 
 
