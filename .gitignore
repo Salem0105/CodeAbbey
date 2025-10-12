@@ -2,4 +2,6 @@
 settings.json
 index.html
 *.log
-try.py
+try*.py
+try*.java
+try*.js
